@@ -13,9 +13,6 @@ void main() {
     double y = 0.0;
     double t1 = 0.0;
     double t2 = 0.0;
-
-
-
     printf("%s", "insert x: ");
     scanf_s("%lf", &x);
     printf("%s", "insert y: ");
