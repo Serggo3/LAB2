@@ -4,8 +4,8 @@
 #include <stdbool.h>
 
 static void compute(const double* x, const double* y, double* t1, double* t2) {
-    *t1 = ((2 + *x) / (2 - *x)) * log( (sqrt( (*y * *y) + (*x * *x) ) / sqrt( (*y * *y) - (*x * *x) ) ));
-    *t2 = (3 / (4 + 4 * sqrt(*x))) + ((2 * ((cos(2 * *x)) * 2) - 5) / ((sin(*y)) * 2));
+    *t1 = ((2 + *x) / (2 - *x)) * log10((sqrt((*y * *y) + (*x * *x)) / sqrt((*y * *y) - (*x * *x))));
+    *t2 = (3 / (4 + 4 * sqrt(*x))) + (  (2 * ((cos(2 * *x)) * (cos(2 * *x))) - 5) / ((sin(*y)) * (sin(*y)))  );
 }
 
 void main() {
