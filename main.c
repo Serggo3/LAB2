@@ -17,6 +17,11 @@ void main() {
     scanf_s("%lf", &x);
     printf("%s", "insert y: ");
     scanf_s("%lf", &y);
-    compute(&x, &y, &t1, &t2);
-    printf("%s%lf%\n%s%lf", "t1: ", t1, "t2: ", t2);
+    if (x && y != 0.0) {
+        compute(&x, &y, &t1, &t2);
+        printf("%s%lf%\n%s%lf", "t1: ", t1, "t2: ", t2);
+    }
+    else {
+        printf("%s", "x or y 0, try greater or lower");
+    }
 }
